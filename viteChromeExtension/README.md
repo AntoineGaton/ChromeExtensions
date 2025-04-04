@@ -20,14 +20,14 @@ cd my-extension
 npm install
 ```
 
-2. **Install Required Dependencies**
+1. **Install Required Dependencies**
 
 ```bash
 npm install axios
 npm install --save-dev @types/chrome
 ```
 
-3. **Configure manifest.json**
+1. **Configure manifest.json**
    Create a `manifest.json` in the project root:
 
 ```json
@@ -49,7 +49,7 @@ npm install --save-dev @types/chrome
 }
 ```
 
-4. **Update vite.config.ts**
+1. **Update vite.config.ts**
 
 ```typescript
 import { defineConfig } from "vite";
@@ -76,14 +76,14 @@ export default defineConfig({
 npm run build
 ```
 
-2. **Load in Chrome**
+1. **Load in Chrome**
 
 - Open Chrome and go to `chrome://extensions/`
 - Enable "Developer mode"
 - Click "Load unpacked"
 - Select the `dist` directory from your project
 
-3. **Development Workflow**
+1. **Development Workflow**
 
 - Make changes to your code
 - Run `npm run build`
@@ -91,7 +91,7 @@ npm run build
 
 ## Project Structure
 
-```
+```text
 viteChromeExtension/
 ├── src/
 │   ├── App.tsx           # Main application component

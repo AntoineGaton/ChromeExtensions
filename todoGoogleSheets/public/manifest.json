@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Todo Google Sheets",
+  "version": "1.0.0",
+  "description": "Todo list that syncs with Google Sheets",
+  "icons": {
+    "32": "icon32.png"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["identity", "storage"],
+  "oauth2": {
+    "client_id": "612661509188-qa4792tn8qpuo9amntk9p7ddtuamgrb8.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/spreadsheets",
+      "https://www.googleapis.com/auth/drive",
+      "https://www.googleapis.com/auth/userinfo.email"
+    ]
+  },
+  "host_permissions": ["https://*.googleapis.com/*"],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhm3X7qutsrskke84ltbBB+9Gr715jj2gp+6w3Qujxtz7m7FnBsE+Uwi6jDKDqRxDfHBts3IbNmXFUxkJf0MUqkXMZuXkJ8cRu9RRi3C2ia0IohEe9rCxe8O2snznzR/ZxuBNK4h/C+reR3c5BaHXQnPd+oDyaHxw85QcxqR/cQXo3ZB9DMZ5kZFEWxhEW6qXhZZc8cArRYNdVGJVBYM63/QYyU8vqWm0wFYxwGsWyYh1/+GWdV6VvG+9VfIzQAMQecnwGEqD5S6hkDnUjQwx6DHZZf1aSE+DSzWXkgUu8xwWgYWunKh6GfGwIyYMxH+SRpyRXSvHNCxlAwIDAQAB"
+}
