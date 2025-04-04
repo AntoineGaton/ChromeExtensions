@@ -79,7 +79,7 @@ chrome.action.onClicked.addListener((tab) => {
    - Wrapped in a try-catch block to handle potential errors
    - Cannot run on `chrome://` pages (browser internal pages) due to security restrictions
 
-## 3. Important Technical Notes:
+## 3. Important Technical Notes
 
 1. **Service Worker Console Access**
 
